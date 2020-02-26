@@ -6,11 +6,10 @@ def pigeon_hash(data)
     value.each do |k,v|
       v.each do |name|
         if list[name][key]
-          list[name][key] << k.to_s
+          pp list[name][key] << k.to_s
         else
-          list[name] = {key => [k.to_s]}
+          pp list[name] = {key => [k.to_s]}
         end
-        pp list
       end
     end
   end
