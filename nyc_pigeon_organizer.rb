@@ -5,8 +5,10 @@ def pigeon_hash(data)
   data.each do |key,value|
     value.each do |k,v|
       v.each do |name|
-        list[name] = {key => [k.to_s]}
+        list[name] = {key => []}
         pp list
+        if list[name][key]
+        end
       end
     end
   end
