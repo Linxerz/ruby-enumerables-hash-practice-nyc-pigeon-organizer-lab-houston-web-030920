@@ -7,10 +7,10 @@ def pigeon_hash(data)
       v.each do |name|
         list[name] = {key => []}
         list[name][key] << k.to_s
-        pp list
       end
     end
   end
+  list
 end
 
 
