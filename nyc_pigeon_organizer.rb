@@ -10,7 +10,7 @@ def pigeon_hash(data)
       end
     end
   end
-  list
+  pp list
 end
 
 
