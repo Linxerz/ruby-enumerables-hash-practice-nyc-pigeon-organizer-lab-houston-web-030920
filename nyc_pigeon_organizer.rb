@@ -5,7 +5,7 @@ def pigeon_hash(data)
   data.each do |key,value|
     value.each do |k,v|
       v.each do |name|
-        if list[name][key]
+        if list[name][key].is_truty?
           pp list[name][key] << k.to_s
         else
           pp list[name] = {key => [k.to_s]}
